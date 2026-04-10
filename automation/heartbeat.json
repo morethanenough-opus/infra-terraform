@@ -1,0 +1,31 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-10-27T10:30:00Z",
+  "service": "infra-terraform",
+  "version": "1.2.3",
+  "environment": "production",
+  "details": {
+    "cpu_usage": 0.15,
+    "memory_usage": 0.60,
+    "disk_space_available": "200GB",
+    "terraform_version": "1.6.0",
+    "last_terraform_apply": "2024-10-26T18:00:00Z"
+  },
+  "dependencies": [
+    {
+      "name": "aws_provider",
+      "status": "healthy",
+      "version": "5.0.0"
+    },
+    {
+      "name": "vault",
+      "status": "healthy",
+      "version": "1.14.0"
+    }
+  ],
+  "metrics": {
+    "api_requests_per_minute": 120,
+    "terraform_apply_duration_avg": 300,
+    "terraform_plan_duration_avg": 60
+  }
+}
